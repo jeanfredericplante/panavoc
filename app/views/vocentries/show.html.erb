@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Eng word:</b>
+  <%= @vocentry.eng_word %>
+</p>
+
+<p>
+  <b>Eng desc:</b>
+  <%= @vocentry.eng_desc %>
+</p>
+
+<p>
+  <b>Fr word:</b>
+  <%= @vocentry.fr_word %>
+</p>
+
+<p>
+  <b>Fr desc:</b>
+  <%= @vocentry.fr_desc %>
+</p>
+
+<p>
+  <b>Sp word:</b>
+  <%= @vocentry.sp_word %>
+</p>
+
+<p>
+  <b>Sp desc:</b>
+  <%= @vocentry.sp_desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_vocentry_path(@vocentry) %> |
+<%= link_to 'Back', vocentries_path %>

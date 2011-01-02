@@ -1,0 +1,33 @@
+<h1>Listing vocentries</h1>
+
+<table>
+  <tr>
+    <th>Eng word</th>
+    <th>Eng desc</th>
+    <th>Fr word</th>
+    <th>Fr desc</th>
+    <th>Sp word</th>
+    <th>Sp desc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vocentries.each do |vocentry| %>
+  <tr>
+    <td><%= vocentry.eng_word %></td>
+    <td><%= vocentry.eng_desc %></td>
+    <td><%= vocentry.fr_word %></td>
+    <td><%= vocentry.fr_desc %></td>
+    <td><%= vocentry.sp_word %></td>
+    <td><%= vocentry.sp_desc %></td>
+    <td><%= link_to 'Show', vocentry %></td>
+    <td><%= link_to 'Edit', edit_vocentry_path(vocentry) %></td>
+    <td><%= link_to 'Destroy', vocentry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vocentry', new_vocentry_path %>

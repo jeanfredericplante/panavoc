@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  eng_word: MyString
+  eng_desc: MyText
+  fr_word: MyString
+  fr_desc: MyText
+  sp_word: MyString
+  sp_desc: MyText
+
+two:
+  eng_word: MyString
+  eng_desc: MyText
+  fr_word: MyString
+  fr_desc: MyText
+  sp_word: MyString
+  sp_desc: MyText

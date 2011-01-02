@@ -1,4 +1,6 @@
 Panavoc::Application.routes.draw do
+  resources :vocentries
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

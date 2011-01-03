@@ -162,7 +162,7 @@ class AddJfVocab < ActiveRecord::Migration
         Vocentry.create(:eng_word => "digress from", :frequency => 1) 
         Vocentry.create(:eng_word => "disclosure", :frequency => 1) 
         Vocentry.create(:eng_word => "discretionary", :frequency => 1) 
-        Vocentry.create(:eng_word => "disgruntled /d_s'gr_nt_d/ adjetivo ‹child/look› contrariado", :frequency => 1) 
+        Vocentry.create(:eng_word => "disgruntled", :frequency => 1) 
         Vocentry.create(:eng_word => "dish up", :frequency => 1) 
         Vocentry.create(:eng_word => "disrepute", :frequency => 1) 
         Vocentry.create(:eng_word => "dissing", :frequency => 1) 

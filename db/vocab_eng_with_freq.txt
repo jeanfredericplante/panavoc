@@ -7,21 +7,18 @@ ad hoc	1
 adamant	1
 adroit	1
 aggravate	1
-aghast	1
-aghast 	1
-aloof	1
-aloof 	1
+aghast	2
+aloof	2
 angst	1
 anticipation	1
-"anything goes!, todo vale "	1
+"anything goes!, todo vale"	1
 apocryphal	1
 apocryphal quote	1
 appalling	1
 appealing	1
-arguably 	1
+arguably	1
 arraigned	1
-assertive	1
-assertive 	1
+assertive	2
 at odds	1
 at the latest	1
 attrition	2
@@ -30,75 +27,71 @@ awkward	1
 back and forth	1
 baffled by	1
 bail out	1
-bailout 	1
+bailout	1
 ballgown	1
 baloney	1
 bar none	1
-bar one 	1
+bar one	1
 bash	1
 bawdy	1
-be gutted by 	1
+be gutted by	1
 be in a funk	1
-be loath 	1
+be loath	1
 beaming	1
-become moot 	1
+become moot	1
 bedspread	1
 beforehand	1
 begrudgingly	1
 beguile	2
-behemoth 	1
+behemoth	1
 being scammed	1
 belated	1
 beleaguered	1
 bemoan	2
 berate	1
 beset	1
-bestow	1
-bestow 	1
-bestride 	1
+bestow	2
+bestride	1
 bestriding	1
 bias	1
-bickering	1
-bickering 	2
+bickering	3
 big rig	1
 big time	1
-binge 	1
-biomes 	1
-blather 	1
+binge	1
+biomes	1
+blather	1
 bleak	1
-"bleak. apático, desolado "	1
+"bleak. apático, desolado"	1
 bleech hair	1
 blithely	1
 blow	2
 blow up	1
-bluestery 	1
+bluestery	1
 blunder	1
-bolster	1
-bolster 	1
+bolster	2
 botus of laughter	1
-"boulder roca, piedra, rocher "	1
-bout 	1
+"boulder roca, piedra, rocher"	1
+bout	1
 bow out	1
 brash	1
 brawn	1
 broody	1
 buck up	1
 bulky	1
-bullock 	1
+bullock	1
 bust	1
 buttress	1
 by a fluke	1
 by and by	1
-cackles 	1
+cackles	1
 cagy/cagey	1
-cantankerous	2
-cantankerous 	1
-carve up 	1
+cantankerous	3
+carve up	1
 catharsis	1
 chatty	1
 cheesy	1
-chest 	1
-chicanery 	1
+chest	1
+chicanery	1
 chuck it all	1
 cinch	1
 circumvent	1
@@ -108,54 +101,54 @@ clash	1
 clerical	1
 clinging	1
 "clingy [kl___] adj (persona) pegajoso,"	1
-clotting 	1
+clotting	1
 clunky	1
 coal	1
 cobble	1
-coddled 	1
+coddled	1
 coerce	2
-colloquial (understand) entender coloquial 	1
+colloquial (understand) entender coloquial	1
 con	1
 concussion	1
 conspicuous	1
-consummate 	1
+consummate	1
 contempt desprecio m	1
-contemptuous 	1
+contemptuous	1
 contrite	1
 conundrum	1
 coo	1
 cornucopia	1
 corny	1
-corrugated 	1
+corrugated	1
 counterintuitive	1
 cradle	1
 cranky	3
-creases (n) 	1
-croak 	1
-cronyism 	1
+creases (n)	1
+croak	1
+cronyism	1
 crotch	1
-crowed 	1
+crowed	1
 crummy	1
 cub	1
 cubs	1
 cunning	1
-curd 	1
+curd	1
 dabble	2
 dally	1
 dashing	1
 dazzling	1
-deacon 	1
+deacon	1
 deadlock	1
 deadpan	1
 dearth	1
-deceit 	1
+deceit	1
 deferred	1
-deft 	2
-demeaning 	1
+deft	2
+demeaning	1
 demeanor	1
 demurred	1
-dent (being dented) 	1
-dependable 	1
+dent (being dented)	1
+dependable	1
 deputize for	1
 deputy	1
 devise	1
@@ -165,35 +158,35 @@ die	1
 digress	1
 digress from	1
 disclosure	1
-discretionary 	1
+discretionary	1
 disgruntled /d_s'gr_nt_d/ adjetivo ‹child/look› contrariado	1
 dish up	1
-disrepute 	1
+disrepute	1
 dissing	1
 distracting	1
 distraught	1
 ditty	2
 dive bar	1
 diverter spout	1
-do me on it 	1
-dodge 	1
+do me on it	1
+dodge	1
 dogging	1
-dole out 	1
+dole out	1
 dong	1
-doozy 	1
+doozy	1
 dork	1
 douchebag	1
 dread	1
 dreary	1
 drench	1
 dribble	1
-drooped to the teens 	1
+drooped to the teens	1
 drop off	1
-droves 	1
-drudgery 	1
+droves	1
+drudgery	1
 dry up	1
 due up front	1
-dullard 	1
+dullard	1
 dusky	1
 dwell on	1
 dwindle	1
@@ -209,7 +202,7 @@ endearment	1
 engrossed	1
 ensconce	2
 ensconced	1
-entanglement 	1
+entanglement	1
 enthrall	1
 entice	1
 enticing	1
@@ -217,57 +210,55 @@ entry	1
 epistemology	1
 equivocate	1
 errand	1
-eschewed 	1
+eschewed	1
 esoteric	1
 exegesis	1
 exhort	1
-extol 	1
+extol	1
 facetious	1
 fastidious	1
 fault	1
 feckless	1
-fed wards 	1
-feisty 	1
+fed wards	1
+feisty	1
 fellow	1
 fester	1
-feud 	1
-fey 	1
+feud	1
+fey	1
 fibs	1
 fidget	1
-filth	1
-filth 	1
+filth	2
 flabbergasted	1
 flabby	1
 flail	1
 flapping gums	1
-flaundered 	1
-flaunt	1
-flaunt 	1
+flaundered	1
+flaunt	2
 fledge	1
-fledgling 	1
+fledgling	1
 flee	1
 fleet	1
 fleeting	1
 fling (n)	1
-flip off 	1
+flip off	1
 flip out	1
 flits	1
 flog	1
 fluff	1
 fluke	1
-flummery 	1
+flummery	1
 flunk	1
-flush 	1
+flush	1
 flutter	1
 follow through	1
 foreclosure	1
-forswears 	1
+forswears	1
 forthright	1
 fortnight	1
 frame	1
-fraying 	1
+fraying	1
 freak out	1
-fretter 	1
+fretter	1
 fritter away	1
 frolic	1
 frumpy	1
@@ -282,46 +273,45 @@ germane	1
 get a glimpse of	1
 get a grip	1
 get around	1
-get one head around 	1
-ghastly 	1
+get one head around	1
+ghastly	1
 giddy	1
-gilded 	1
+gilded	1
 gill	1
 gimmicks	1
 girth	1
 gist	1
-give the cold shoulder 	1
+give the cold shoulder	1
 giveaway	1
-gloat	2
-gloat 	1
+gloat	3
 glum / gloomy	1
 goaded	1
-gobbled up 	1
-gobbledygook 	1
+gobbled up	1
+gobbledygook	1
 gobs	1
 gooey	1
 gown	1
-graft 	1
+graft	1
 grasp	1
 graze	1
 greedy	1
 griddles	1
 grin	1
 grind my gears	1
-grinding 	1
+grinding	1
 grit	1
 gross / yukky	1
 groundswell	1
 grudges	1
 grueling	1
 grunt	1
-gummed up 	1
+gummed up	1
 gurgle	1
 gusty	1
 haggle	1
 haggle (over sthgh)	1
 haltingly	1
-hamper 	1
+hamper	1
 hampered	1
 hamstrung	1
 handicapper	1
@@ -329,48 +319,47 @@ haphazard	1
 harbinger	1
 hardship	1
 harp on	1
-has had a fit 	1
+has had a fit	1
 hasty	1
 hatching	1
-haughty	1
-haughty 	1
+haughty	2
 haul	1
-have a hunch 	1
+have a hunch	1
 havoc	1
 head rush	1
 heartbreaking	1
 heckle	1
-hedged 	1
+hedged	1
 heed	1
 hefty	1
-heinie 	1
+heinie	1
 heir	1
 heirloom	1
-hew 	1
+hew	1
 hiatus	1
 hideous	1
 hieratic	1
 high and mighty	1
-hilt 	1
+hilt	1
 hinder	1
 hindrance	1
-hinge on 	1
+hinge on	1
 hinky	1
 hissy	1
 hissy fits	1
-hit it off 	1
-hoarse 	1
+hit it off	1
+hoarse	1
 hobble	1
 hoist	1
 hoist and hold	1
 hollow	1
-"hoof, hooves "	1
+"hoof, hooves"	1
 hoot	1
 hortative	1
-hosiery 	1
-hubristic 	1
+hosiery	1
+hubristic	1
 huddle	1
-hunch 	1
+hunch	1
 hunk	1
 hurdle	1
 hussy	1
@@ -380,13 +369,13 @@ i dig that!	1
 i don't give a hoot	1
 "icky ['_k_] adjetivo asqueroso,"	1
 ilk	1
-impassioned 	1
+impassioned	1
 implausible	1
 in one go	1
 inane	2
 internecine	1
 intertwine	1
-is wary of 	1
+is wary of	1
 it smacks of	1
 jaded	1
 jagged	1
@@ -396,43 +385,43 @@ jet black	1
 jettison	1
 jitters	1
 jolt	1
-josh 	1
+josh	1
 jot down	1
 jump on the bandwagon	1
 jumpy	1
-keats (np) 	1
+keats (np)	1
 kelp	1
 keyed up	1
 kinky	2
 kudos	1
 ladle	1
 lame	1
-lapels 	1
+lapels	1
 lash out	1
-leaden 	1
+leaden	1
 leech	1
 leeway	1
 litigation	1
-loaf 	1
+loaf	1
 loins	1
-loiter 	1
-loosy goosy 	1
+loiter	1
+loosy goosy	1
 lore	1
-lost their sway 	1
-ludicrous 	1
+lost their sway	1
+ludicrous	1
 lull	1
 lump	1
 lump sum	1
 lunge	1
 lurch	1
-lurching 	1
+lurching	1
 lure	1
 lurks	1
-luscious 	1
+luscious	1
 make a fool of yourself	1
 make a fuss	1
 manacling	1
-mauled 	1
+mauled	1
 mean well	1
 meek	1
 mellow	1
@@ -444,10 +433,10 @@ mingle	1
 mischief-maker	1
 mislead	1
 momentum	1
-moniker 	1
-motley crew 	1
+moniker	1
+motley crew	1
 mouth guard	1
-moxy 	1
+moxy	1
 muggy	1
 muse (n)	1
 mussels	1
@@ -455,34 +444,34 @@ muster up	1
 mystify	1
 nab	1
 nagging	2
-nary 	1
+nary	1
 navel	1
 nebbish	1
 negligible	1
 nemesis	1
 nimble	2
-no diggity 	1
+no diggity	1
 nominal fee	1
 nondescript	1
 nose dive	1
 nuance	1
-nudge 	1
+nudge	1
 nugatory	1
 oblivious	1
 obnoxious	2
-off the fence 	1
+off the fence	1
 ominous	1
 on	2
 on a whim	1
 on the go	1
-on the prowl 	1
+on the prowl	1
 otherwise	1
 outbreak	1
 outlandish	1
 outrageous	1
 outright	1
 overarching	1
-overexert 	1
+overexert	1
 overhaul	2
 pacifier	1
 palliative	1
@@ -504,8 +493,8 @@ plight	2
 plunge	1
 plunk down	1
 poise	1
-pony up 	1
-portentous 	1
+pony up	1
+portentous	1
 pothole	1
 potty	1
 pout	2
@@ -513,14 +502,13 @@ prank	1
 prattle	1
 preposterous	1
 prevaricate	1
-prickly	1
-prickly 	1
+prickly	2
 primer	1
 primpring	1
 print run	1
-profligacy 	1
+profligacy	1
 profligate	1
-prong 	1
+prong	1
 protean	1
 protracted	1
 prowl	2
@@ -529,7 +517,7 @@ pry	1
 puffy	1
 pull back	1
 pull off	1
-pulpit 	1
+pulpit	1
 pummel	1
 pungent	1
 punt	1
@@ -538,9 +526,9 @@ put someone on	1
 quaint	1
 quaintness	1
 quandary	1
-quants 	1
+quants	1
 quarrel	1
-quash 	1
+quash	1
 queasiness	1
 quelch	1
 quibble	1
@@ -557,18 +545,17 @@ ravishing	1
 razzle	1
 reap	1
 rebound	1
-reel 	1
-reeling 	1
+reel	1
+reeling	1
 relentless	1
-reluctance 	1
+reluctance	1
 reluctant	1
 removal	1
 repentant	1
-respite  (from respect)	1
-revile 	1
+respite (from respect)	1
+revile	1
 riddle	1
-rig	1
-rig 	1
+rig	2
 right up front	1
 rile	1
 rubble	1
@@ -577,15 +564,14 @@ rumble	1
 rummaging	1
 run	1
 run across	1
-sag	1
-sag 	1
+sag	2
 sanction	1
 sassy	1
 scab	1
 scampered	1
-scattershot 	1
+scattershot	1
 scavenge	1
-scorch 	1
+scorch	1
 scorn	1
 scrawny	1
 screening services	1
@@ -594,44 +580,42 @@ scurvy	1
 seams	1
 seditious	1
 seemingly	1
-serendipity	1
-serendipity 	1
+serendipity	2
 shabby	1
-shack up 	1
+shack up	1
 shady	1
 sham	1
-shamble 	1
+shamble	1
 shear	1
 shed	1
 shield	1
-shill 	1
-shirk 	1
+shill	1
+shirk	1
 shoals	1
 shore up	1
 shortfall	1
-shrill 	1
+shrill	1
 shrivel	1
 shroud	1
 shudder	2
-shun	2
-shun 	1
-shunning 	1
+shun	3
+shunning	1
 shutt out	1
 sinewy	1
-skirmish 	2
-skirt facts 	1
+skirmish	2
+skirt facts	1
 skittish	1
-slacker 	1
+slacker	1
 slate	1
 slated to be	1
-sleazy 	1
+sleazy	1
 sleight	1
-slender 	1
-slight (n) 	1
+slender	1
+slight (n)	1
 slimy	1
-sloth 	1
+sloth	1
 slouch	1
-slouch away 	1
+slouch away	1
 slovenly	1
 slovenly slope	1
 slucker	1
@@ -640,28 +624,28 @@ sluice	1
 slump	1
 slurred speech	1
 slurry	1
-smear 	1
+smear	1
 smirk	1
 snarling	1
 sneak	1
 sneak up	1
 sneer at	1
-snide 	1
-snuff out figurative v extinguir 	1
+snide	1
+snuff out figurative v extinguir	1
 snugly	1
 solace	2
 solicitous	1
 sophism	1
-sororities 	1
+sororities	1
 spear	2
 spearhead	1
-spiffy 	1
+spiffy	1
 spoofing	1
 springboard	1
 sprinkle	1
 spur	1
 spurn	1
-sputter 	1
+sputter	1
 squab	1
 squabbles	1
 squalid	1
@@ -672,9 +656,9 @@ squinting	1
 squire	1
 squirm	1
 stale	1
-stalemate 	1
+stalemate	1
 stalk	1
-stalk (v) 	1
+stalk (v)	1
 stalwart	2
 stammering	1
 stance	1
@@ -683,26 +667,24 @@ star	1
 starch	1
 statter	1
 status quo	1
-stave off	1
-stave off 	1
+stave off	2
 steadfast	1
 steed	1
 stem	1
 stench	1
-stern 	1
+stern	1
 stew	1
 stifle	1
 stingy	1
-stint	1
-stint 	1
+stint	2
 stir up	1
 stooge	1
 straddle	2
 stranded	1
 streaming	1
-stride/strode 	1
+stride/strode	1
 strife	1
-stultify 	1
+stultify	1
 stump	1
 sturdy	1
 stutter	1
@@ -720,12 +702,12 @@ swap	1
 sway	1
 sweeping	1
 swerve	1
-swindle 	1
+swindle	1
 swindler	1
 swine	1
 swinger	1
 swivel	1
-swoony 	1
+swoony	1
 tackle	1
 take in	1
 take up	1
@@ -733,23 +715,23 @@ tally	1
 tantamount	1
 tantrum	2
 tap somebody's phone	1
-tattas 	1
+tattas	1
 taunt	1
 taxonomy	1
 tear down	1
-teeter 	1
+teeter	1
 tenet	1
 tenets	1
-tepid 	1
+tepid	1
 terse	1
-that's the size of it 	1
+that's the size of it	1
 thaw	2
 the nuts and bolts	1
-thrash 	1
+thrash	1
 threadbare	1
-thrift 	2
+thrift	2
 throb	1
-throes 	1
+throes	1
 thugs	1
 tingling	1
 to arouse	1
@@ -786,11 +768,11 @@ tote	1
 toting from tote	1
 tout (v)	1
 travesty	1
-treacherous 	1
+treacherous	1
 tuck in	1
 turd	1
 turmoil	1
-turn out (for) to attend 	1
+turn out (for) to attend	1
 turnaround nm tiempo de respuesta tras llegada	1
 turnips	1
 turnout	1
@@ -798,16 +780,16 @@ tween (ager)	1
 twinkle	1
 two pronged	1
 umpire	1
-unbidden 	1
+unbidden	1
 undermine	1
 uneventful	1
 unfathomable	1
 unhinged	1
-unravel 	1
-unruffled 	1
-unvetted? 	1
+unravel	1
+unruffled	1
+unvetted?	1
 unwavering	1
-"unwieldy poco manejable, pesado "	1
+"unwieldy poco manejable, pesado"	1
 unwitting	1
 up to here/now	1
 upbeat	1
@@ -818,10 +800,10 @@ vested interest	1
 vicarious	1
 waffle	1
 wail	1
-wailing 	1
+wailing	1
 ward	1
-ward heeler 	1
-ward of 	1
+ward heeler	1
+ward of	1
 watch it	1
 watch out for	1
 waver	1
@@ -831,7 +813,7 @@ welder	1
 whimsical	2
 whiner	1
 whipping	1
-whisked away 	1
+whisked away	1
 wield	1
 wimpy	1
 wince	1
@@ -839,13 +821,13 @@ wistful	1
 wit	1
 withdraw from	1
 wither	1
-wobble 	1
+wobble	1
 woe	1
-woebegone 	1
+woebegone	1
 woes	1
 wolf down	1
 woo	1
 worn out	1
 wrangle	1
 wrench	1
-"zit, acne, pimple "	1
+"zit, acne, pimple"	1

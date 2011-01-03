@@ -270,7 +270,6 @@ class AddJfVocab < ActiveRecord::Migration
         Vocentry.create(:eng_word => "fussy", :frequency => 1) 
         Vocentry.create(:eng_word => "garish", :frequency => 1) 
         Vocentry.create(:eng_word => "gear up for", :frequency => 1) 
-        Vocentry.create(:eng_word => "geek speaknfjerga de técnicos (informática)", :frequency => 1) 
         Vocentry.create(:eng_word => "geniality", :frequency => 1) 
         Vocentry.create(:eng_word => "germane", :frequency => 1) 
         Vocentry.create(:eng_word => "get a glimpse of", :frequency => 1) 

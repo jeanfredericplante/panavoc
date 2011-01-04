@@ -12,9 +12,9 @@
     <th></th>
   </tr>
 
-<% @vocentries.each do |vocentry| %>
+<% @vocentries.sort.each do |vocentry| %>
   <tr>
-    <td><%= vocentry.eng_word %></td>
+    <td><%= vocentry.eng_word.downcase %></td>
     <td><%= vocentry.eng_desc %></td>
     <td><%= vocentry.fr_word %></td>
     <td><%= vocentry.sp_word %></td>

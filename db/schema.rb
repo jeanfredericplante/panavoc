@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110103015956) do
+ActiveRecord::Schema.define(:version => 20110104041845) do
 
   create_table "vocentries", :force => true do |t|
     t.string   "eng_word"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20110103015956) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "frequency",  :default => 0
+    t.text     "notes"
   end
 
 end

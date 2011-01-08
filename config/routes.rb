@@ -1,7 +1,7 @@
 Panavoc::Application.routes.draw do
-  get "welcome/index"
 
-  get "home/index"
+  match "/home", :to => 'home#index'
+  root :to => "home#index"
 
   resources :vocentries
 

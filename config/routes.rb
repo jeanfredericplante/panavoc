@@ -1,4 +1,8 @@
 Panavoc::Application.routes.draw do
+  get "welcome/index"
+
+  get "home/index"
+
   resources :vocentries
 
   # The priority is based upon order of creation:

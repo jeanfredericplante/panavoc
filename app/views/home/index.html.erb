@@ -1,0 +1,18 @@
+<h1>Today's vocab</h1>
+
+<table>
+  <tr>
+    <th>Eng word</th>
+    <th>Eng desc</th>
+    <th></th>
+  </tr>
+
+<% @vocentries.each do |vocentry| %>
+  <tr>
+    <td><%= vocentry.eng_word.downcase %></td>
+    <td><%= vocentry.eng_desc %></td>
+  </tr>
+<% end %>
+</table>
+
+

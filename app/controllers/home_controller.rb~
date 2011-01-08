@@ -1,0 +1,6 @@
+class HomeController < ApplicationController
+  def index
+    @vocentries = Vocentry.select_home_words(:maximum => 5)
+  end
+
+end

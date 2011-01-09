@@ -6,13 +6,7 @@
     <th>Eng desc</th>
     <th></th>
   </tr>
-
-<% @vocentries.each do |vocentry| %>
-  <tr>
-    <td><%= vocentry.eng_word.downcase %></td>
-    <td><%= vocentry.eng_desc %></td>
-  </tr>
-<% end %>
+  <div id="wodz">
+    <%= render(:partial => "word_entry",:collection => @vocentries) %>
+  </div>
 </table>
-
-

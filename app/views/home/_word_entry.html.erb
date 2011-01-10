@@ -2,5 +2,7 @@
   <tr>
       <td><%= word_entry.eng_word.downcase %></td>
       <td><%= (word_entry.eng_desc != "" ? "Loading..." : word_entry.eng_desc) %></td>
+      <%= link_to_remote 'get def...', :url => {:action => 'get_def', :word => word_entry.eng_word.downcase},
+          :update => word_entry %>
   </tr>
 <% end %>

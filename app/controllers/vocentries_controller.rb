@@ -25,9 +25,8 @@ class VocentriesController < ApplicationController
   # GET /vocentries/new.xml
   def new
     @vocentry = Vocentry.new
-
     respond_to do |format|
-      format.html # new.html.erb
+      format.html # show.html.erb
       format.xml  { render :xml => @vocentry }
     end
   end

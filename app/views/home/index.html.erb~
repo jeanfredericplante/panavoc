@@ -6,5 +6,8 @@
     <th>Eng desc</th>
     <th></th>
   </tr>
-  <%= render(:partial => "word_entry",:collection => @vocentries) %>
+  <div id="wodz">
+    <%= render(:partial => "word_entry",:collection => @vocentries) %>
+    <%
+  </div>
 </table>

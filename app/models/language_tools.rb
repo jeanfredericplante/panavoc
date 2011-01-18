@@ -22,7 +22,11 @@ class LanguageTools
     url = base_uri+ text_uri
     puts url
     response = HTTParty.get(url)
-    return response
+    if !response["results"].nil?
+      return response["results"]["result"]
+    else
+      return nil
+    end
   end
 
   def self.translate(text,from_locale="en",to_locale="fr")

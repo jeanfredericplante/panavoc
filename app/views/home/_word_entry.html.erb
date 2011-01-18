@@ -1,6 +1,17 @@
 <%= div_for(word_entry, word_entry.eng_word.downcase) do %>
   <tr>
       <td><%= word_entry.eng_word.downcase %></td>
-      <td><%= (word_entry.eng_desc != "" ? word_entry.eng_desc : "N/A") %></td>
+      <td><% if word_entry.eng_desc.blank? %>
+          <p>"Loading..."</p>
+          <% else %>
+          <% if !word_entry.eng_desc.each.nil? %>
+            <ul>
+             <% word_entry.eng_desc.each do |s| %>
+               <li>(<%= s["partofspeech"] %>): <%= s["definition"] %>
+            <% end  %>
+            </ul>
+          <% end  %>
+        <% end %>
+    </td>
   </tr>
 <% end %>

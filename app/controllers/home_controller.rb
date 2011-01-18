@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
     @vocentries = Vocentry.select_home_words(:maximum => 5)
     @vocentries.each do |v|
-      v.eng_desc = LanguageTools.translate(v.eng_word.downcase)
+      v.eng_desc = LanguageTools.definition_abbr(v.eng_word.downcase)
     end
     @vocentries.each do |v|
       puts v.eng_desc

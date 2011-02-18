@@ -1,9 +1,11 @@
 Panavoc::Application.routes.draw do
 
   match "/home", :to => 'home#index'
+  match "/home/get_definition/:id", :to => 'home#get_definition'
   root :to => "home#index"
 
-  resources :vocentries
+  
+  #resources :vocentries
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

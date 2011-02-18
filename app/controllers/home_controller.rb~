@@ -1,12 +1,7 @@
 class HomeController < ApplicationController
   def index
     @vocentries = Vocentry.select_home_words(:maximum => 5)
-    @vocentries.each do |v|
-      v.eng_desc = LanguageTools.definition_abbr(v.eng_word.downcase)
-    end
-    @vocentries.each do |v|
-      puts v.eng_desc
-    end
+    logger.debug("I have entered index function")
 
    # jQuery.getJSON("http://www.google.com/dictionary/json?callback=dict_api.callbacks.id100&q=test&sl=en&tl=en&restrict=pr%2Cde&client=te",'',get_definition)  
     flash[:notice] = "test";
@@ -18,12 +13,18 @@ class HomeController < ApplicationController
     end
  
   end
-  def get_definition
-    flash[:notice] = "test";
-    alert("hello")
-    # @vocentries.each do |v|
-    # end
-  end
 
+  def get_definition
+    logger.debug("I have entered that function")
+    @voc_item = Vocentry.find(params[:id])
+    @voc_item.eng_desc = LanguageTools.definition_abbr(@voc_item.eng_word.downcase)
+    respond_to do |format|
+      format.js
+      format.html
+    end
+  rescue ActiveRecord::RecordNotFound
+    logger.error("invalid para")
+    redirect_to :action => "index"
+  end
 
 end

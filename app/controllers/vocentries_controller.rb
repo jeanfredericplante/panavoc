@@ -79,4 +79,18 @@ class VocentriesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def get_definition
+    @voc_item = Vocentry.find(params[:id])
+    @voc_item.eng_desc = LanguageTools.definition_abbr(v.eng_word.downcase)
+    logger.debug("I have entered that function")
+    respond_to do |format|
+      format.js
+    end
+  rescue ActiveRecord::RecordNotFound
+    logger.error("invalid para")
+    redirect_to :action => "index"
+  end
+
+  
 end

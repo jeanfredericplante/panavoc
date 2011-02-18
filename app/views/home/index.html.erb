@@ -6,6 +6,11 @@
     <th>Eng desc</th>
     <th></th>
   </tr>
+  <% @vocentries.each do |voc_item| %>
+  <% remote_function(:update => 'wodzr', :url => {:action => 'get_definition', :id => voc_item}) %>
+
+  <% end %>
+  
   <div id="wodz">
     <%= render(:partial => "word_entry",:collection => @vocentries) %>
   </div>

@@ -1,0 +1,1 @@
+page.replace(@voc_item.eng_word.downcase, :partial => "word_entry", :object =>  @voc_item)

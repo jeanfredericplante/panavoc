@@ -2,7 +2,7 @@
   <tr>
       <td><%= word_entry.eng_word.downcase %></td>
       <td><% if word_entry.eng_desc.blank? %>
-          <p>"Loading..."</p>
+          <p>Loading...</p>
           <% else %>
           <% if !word_entry.eng_desc.each.nil? %>
             <ul>

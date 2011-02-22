@@ -81,16 +81,17 @@ class VocentriesController < ApplicationController
   end
   
   def get_definition
+    logger.debug("I have entered get definition")
     @voc_item = Vocentry.find(params[:id])
-    @voc_item.eng_desc = LanguageTools.definition_abbr(v.eng_word.downcase)
-    logger.debug("I have entered that function")
+    @voc_item.eng_desc = LanguageTools.definition_abbr(@voc_item.eng_word.downcase)
     respond_to do |format|
       format.js
+      format.html
     end
   rescue ActiveRecord::RecordNotFound
     logger.error("invalid para")
-    redirect_to :action => "index"
+    redirect_to :controller => 'home', :action => "index"
   end
 
-  
-end
+  end
+

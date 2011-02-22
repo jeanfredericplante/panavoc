@@ -15,15 +15,17 @@ class HomeController < ApplicationController
   end
 
   def get_definition
-    logger.debug("I have entered get definition")
-    @voc_item = Vocentry.find(params[:id])
-    @voc_item.eng_desc = LanguageTools.definition_abbr(@voc_item.eng_word.downcase)
+    @vocentries = Vocentry.find(params[:collection])
+    @vocentries.each do |voc_item|
+      voc_item.eng_desc = LanguageTools.definition_abbr(voc_item.eng_word.downcase)
+      voc_item.eng_desc = "definition not found" unless voc_item.eng_desc
+    end
+
     respond_to do |format|
-      format.js
-      format.html
+      format.js { render :layout => false }
     end
   rescue ActiveRecord::RecordNotFound
-    logger.error("invalid para")
+    logger.error("invalid param")
     redirect_to :action => "index"
   end
 

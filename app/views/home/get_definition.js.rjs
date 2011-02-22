@@ -1,1 +1,3 @@
-page.replace(@voc_item.eng_word.downcase, :partial => "word_entry", :object =>  @voc_item)
+# page.replace_html(@voc_item.eng_word.downcase+"_vocentry", :partial => "word_entry", :object =>  @voc_item)
+
+page.replace_html("wodz", :partial => "word_entry", :collection =>  @vocentries)

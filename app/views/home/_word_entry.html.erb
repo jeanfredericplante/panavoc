@@ -1,5 +1,4 @@
-<%= div_for(word_entry, word_entry.eng_word.downcase) do %>
-  <tr>
+  <tr id=<%= word_entry.id%>>
       <td><%= word_entry.eng_word.downcase %></td>
       <td><% if !word_entry.eng_desc.nil? %>
             <ul>
@@ -10,4 +9,3 @@
           <% end %>
     </td>
   </tr>
-<% end %>

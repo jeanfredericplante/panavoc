@@ -1,4 +1,8 @@
 <h1>Today's vocab</h1>
+  <select id="options" onchange="<%= remote_function(:url => {:controller => 'home', :action => 'get_definition', :collection => @vocentries}) %>">
+      <option value="0">Hello</option>
+      <option value="1">World</option>
+    </select>
 
 <table>
   <tr>
@@ -6,11 +10,5 @@
     <th>Eng desc</th>
     <th></th>
   </tr>
-  <div id="wodz">
     <%= render(:partial => "word_entry",:collection => @vocentries) %>
-  <select id="options" onchange="<%= remote_function(:update => "wodz", :url => {:controller => 'home', :action => 'get_definition', :collection => @vocentries}) %>">
-      <option value="0">Hello</option>
-      <option value="1">World</option>
-    </select>
-  </div>
 </table>

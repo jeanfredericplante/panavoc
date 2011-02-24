@@ -22,7 +22,8 @@ class HomeController < ApplicationController
     end
 
     respond_to do |format|
-      format.js { render :layout => false }
+      #format.js { render :layout => false }
+      format.js
     end
   rescue ActiveRecord::RecordNotFound
     logger.error("invalid param")

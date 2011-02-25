@@ -2,7 +2,7 @@ Panavoc::Application.routes.draw do
 
   #match "/home", :to => 'home#index'
   #match '/vocentries/get_definition', :to => 'vocentries#get_definition'
-  #root :to => "home#index"
+  root :to => "home#index"
 
   
   resources :vocentries

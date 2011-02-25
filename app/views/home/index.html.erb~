@@ -10,7 +10,5 @@
     <th>Eng desc</th>
     <th></th>
   </tr>
-  <div id="wodz">
     <%= render(:partial => "word_entry",:collection => @vocentries) %>
-  </div>
 </table>

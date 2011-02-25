@@ -1,8 +1,6 @@
 <h1>Today's vocab</h1>
-  <select id="options" onchange="<%= remote_function(:url => {:controller => 'home', :action => 'get_definition', :collection => @vocentries}) %>">
-      <option value="0">Hello</option>
-      <option value="1">World</option>
-    </select>
+  <body onload="<%= remote_function(:url => {:controller => 'home', :action => 'get_definition', :collection => @vocentries}) %>">
+    </body>
 
 <table>
   <tr>

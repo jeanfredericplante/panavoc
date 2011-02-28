@@ -1,14 +1,18 @@
-  <tr id=<%= word_entry.id%>>
-      <td><%= word_entry.eng_word.downcase %></td>
+  <tr id=<%= word_entry.id -%>>
+      <td><%= word_entry.eng_word.downcase -%></td>
       <td><% if !word_entry.eng_desc.nil? %>
-            <ul>
-             <%= word_entry.eng_desc.each do |s| -%>
-               <li>(<%= display_voc(s) %>
-            <% end %>
-            </ul>
-          <% else %>
-            <img src="images/spinner.gif" height="30" alt="loading" />
-
+        <ul>
+          <% word_entry.eng_desc.each do |s| %>
+                <% if !(display_voc(s) == "NA") %>
+                 <li><%= display_voc(s) %>
+                <% end %>
           <% end %>
+            </ul>
+        <% else %>
+            <img src="images/spinner.gif" height="10" alt="loading" />
+        <% end %>
+    </td>
+    <td>
+     <%= link_to "Edit", :controller => "vocentries", :action => "edit", :id => word_entry.id %>
     </td>
   </tr>

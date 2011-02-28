@@ -18,11 +18,11 @@ class HomeController < ApplicationController
     @vocentries = Vocentry.find(params[:collection])
     @vocentries.each do |voc_item|
       voc_item.eng_desc = LanguageTools.definition_abbr(voc_item.eng_word.downcase)
-      voc_item.eng_desc = "definition not found" unless voc_item.eng_desc
+      voc_item.eng_desc = "no defition found" unless voc_item.eng_desc
     end
 
     respond_to do |format|
-      format.js { render :layout => false }
+      format.js
     end
   rescue ActiveRecord::RecordNotFound
     logger.error("invalid param")

@@ -86,10 +86,9 @@ class VocentriesController < ApplicationController
     @voc_item.eng_desc = LanguageTools.definition_abbr(@voc_item.eng_word.downcase)
     respond_to do |format|
       format.js
-      format.html
     end
   rescue ActiveRecord::RecordNotFound
-    logger.error("invalid para")
+    logger.error("invalid param")
     redirect_to :controller => 'home', :action => "index"
   end
 

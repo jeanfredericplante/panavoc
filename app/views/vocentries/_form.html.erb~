@@ -17,23 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :eng_desc %><br />
-    <%= f.text_area :eng_desc %>
+    <%= f.text_area :eng_desc, :rows=>"3", :class=>"widgEditor" %>
   </div>
   <div class="field">
-    <%= f.label :fr_word %><br />
-    <%= f.text_field :fr_word %>
-  </div>
-  <div class="field">
-    <%= f.label :fr_desc %><br />
-    <%= f.text_area :fr_desc %>
-  </div>
-  <div class="field">
-    <%= f.label :sp_word %><br />
-    <%= f.text_field :sp_word %>
-  </div>
-  <div class="field">
-    <%= f.label :sp_desc %><br />
-    <%= f.text_area :sp_desc %>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
   </div>
   <div class="actions">
     <%= f.submit %>

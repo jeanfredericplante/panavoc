@@ -2,11 +2,7 @@
       <td><%= word_entry.eng_word.downcase -%></td>
       <td><% if !word_entry.eng_desc.nil? %>
         <ul>
-          <% word_entry.eng_desc.each do |s| %>
-                <% if !(display_voc(s) == "NA") %>
-                 <li><%= display_voc(s) %>
-                <% end %>
-          <% end %>
+          <%= word_entry.eng_desc %>
             </ul>
         <% else %>
             <img src="images/spinner.gif" height="10" alt="loading" />

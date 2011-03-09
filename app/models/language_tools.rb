@@ -23,7 +23,7 @@ class LanguageTools
     puts url
     response = HTTParty.get(url)
     if !response["results"].nil?
-      return response["results"]["result"]
+      return display_voc_formatted_from_abbr(response["results"]["result"])
     else
       return nil
     end
@@ -38,6 +38,21 @@ class LanguageTools
     puts response["data"]["translations"].size()
     return response["data"]["translations"][0]["translatedText"]
   end
+
+   def self.display_voc_formatted_from_abbr(response)
+    begin
+      def_list = ""
+      response.each do |word|
+        if (word["partofspeech"] && word["definition"])
+          def_list =def_list + "<li>"+ word["partofspeech"] + ": "+ word["definition"] + "</li>"
+        end
+      end
+    rescue
+      def_list  = "NA"
+    end
+  return def_list.html_safe 
+  end
+
 
 end
 

@@ -156,6 +156,7 @@
 	width: 100%;
 	height: 200px;
 	border-top-width: 1px;
+        border: 2px inset;
 }
 
 .widgContainer textarea.widgEditor

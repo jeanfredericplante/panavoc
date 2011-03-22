@@ -134,7 +134,7 @@ var widgInsertParagraphs = true;
 ** prompted as to whether they wish to clean the content.
 */
 
-var widgAutoClean = false;
+var widgAutoClean = true;
 
 /******************************************************************************
 **    END CONFIGURATION
@@ -244,18 +244,18 @@ function widgEditor(replacedTextareaID)
 	this.theToolbar = new widgToolbar(this);
 	
 	/* An extra input to determine if the submitted data is from the normal textarea or from the widgEditor */
-	this.theExtraInput.type = "hidden";	
+	/*this.theExtraInput.type = "hidden";	
 	this.theExtraInput.id = this.theTextarea.id + "WidgEditor";
 	this.theExtraInput.name = this.theTextarea.name + "WidgEditor";
 	this.theExtraInput.value = "true";
-	
+	*/ 
 	this.theTextarea.id += "WidgTextarea";
 	this.theTextarea.name += "WidgTextarea";
 	
 	this.theContainer.appendChild(this.theToolbar.theList);
 	this.theContainer.appendChild(this.theIframe);
 	this.theContainer.appendChild(this.theInput);
-	this.theContainer.appendChild(this.theExtraInput);
+//	this.theContainer.appendChild(this.theExtraInput);
 	this.theContainer.style.visibility = "hidden";
 
 	this.theInput.widgEditorObject = this;
@@ -909,15 +909,7 @@ widgEditor.prototype.writeDocument = function(documentContent)
 	
 	/* Insert dynamic variables/content into document */
 	/* IE needs stylesheet to be written inline */
-	if (typeof document.all != "undefined")
-	{
-		documentTemplate = documentTemplate.replace(/INSERT:STYLESHEET:END/, '<link rel="stylesheet" type="text/css" href="' + widgStylesheet + '"></link>');
-	}
-	/* Firefox can't have stylesheet written inline */
-	else
-	{
-		documentTemplate = documentTemplate.replace(/INSERT:STYLESHEET:END/, "");
-	}
+          documentTemplate = documentTemplate.replace(/INSERT:STYLESHEET:END/, "");
 	
 	documentTemplate = documentTemplate.replace(/INSERT:CONTENT:END/, documentContent);
 	
@@ -926,7 +918,7 @@ widgEditor.prototype.writeDocument = function(documentContent)
 	this.theIframe.contentWindow.document.close();
 
 	/* In Firefox stylesheet needs to be loaded separate to other HTML, because if it's loaded inline it causes Firefox to have problems with an empty document */
-	if (typeof document.all == "undefined")
+/*	if (typeof document.all == "undefined")
 	{
 		var stylesheet = this.theIframe.contentWindow.document.createElement("link");
 		stylesheet.setAttribute("rel", "stylesheet");
@@ -934,7 +926,7 @@ widgEditor.prototype.writeDocument = function(documentContent)
 		stylesheet.setAttribute("href", widgStylesheet);
 		this.theIframe.contentWindow.document.getElementsByTagName("head")[0].appendChild(stylesheet);
 	}
-	
+*/	
 	return true;
 }
 

@@ -1,8 +1,14 @@
 class VocentriesController < ApplicationController
   # GET /vocentries
   # GET /vocentries.xml
+
+
   def index
-    @vocentries = Vocentry.all.sort
+    #@vocentries = Vocentry.all.sort
+    @vocentries = Vocentry.will_paginate :per_page => 10, :page => params[:page],
+                    :conditions => ["name LIKE ?", "%#{params[:search]}%"],
+                    :order => 'eng_word'
+    
 
     respond_to do |format|
       format.html # index.html.erb
@@ -86,10 +92,9 @@ class VocentriesController < ApplicationController
     @voc_item.eng_desc = LanguageTools.definition_abbr(@voc_item.eng_word.downcase)
     respond_to do |format|
       format.js
-      format.html
     end
   rescue ActiveRecord::RecordNotFound
-    logger.error("invalid para")
+    logger.error("invalid param")
     redirect_to :controller => 'home', :action => "index"
   end
 

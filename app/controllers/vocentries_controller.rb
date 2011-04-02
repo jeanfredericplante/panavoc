@@ -1,8 +1,11 @@
 class VocentriesController < ApplicationController
   # GET /vocentries
   # GET /vocentries.xml
+
+
   def index
-    @vocentries = Vocentry.all.sort
+    #@vocentries = Vocentry.all.sort
+    @vocentries = Vocentry.search(params[:search], params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

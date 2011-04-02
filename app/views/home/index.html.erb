@@ -1,7 +1,8 @@
 <h1>Today's vocab</h1>
   <body onload="<%= remote_function(:url => {:controller => 'home', :action => 'get_definition', :collection => @vocentries}) %>">
     </body>
-<%= link_to "New",{ :controller =>"vocentries", :action => "new", :method => :get} %>
+<%= link_to "New word",{ :controller =>"vocentries", :action => "new", :method => :get} %>
+<%= link_to "Vocabulary list",{ :controller =>"vocentries", :action => "index", :method => :get} %>
 <table>
   <tr>
     <th>Eng word</th>

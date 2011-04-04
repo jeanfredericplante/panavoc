@@ -3,8 +3,10 @@
 <head>
   <title>VoCaB</title>
   <%= stylesheet_link_tag :all, :recursive => true %>
+  <%= stylesheet_link_tag "ujs_sort_helper"%> 
   <%= javascript_include_tag :defaults %>
   <%= javascript_include_tag "widgEditor" %>
+  <%= javascript_include_tag "ujs_sort_helper", :plugin => "ujs_sort_helper"%> 
 
 </head>
 <body>
@@ -19,7 +21,7 @@
 
   feedback_widget_options.display = "overlay";  
   feedback_widget_options.company = "vocab";
-  feedback_widget_options.placement = "bottom";
+  feedback_widget_options.placement = "right";
   feedback_widget_options.color = "#222";
   feedback_widget_options.style = "idea";
   var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);

@@ -9,4 +9,5 @@ module VocentriesHelper
         javascript_include_tag "mce_editor"
       end
   end
+
 end

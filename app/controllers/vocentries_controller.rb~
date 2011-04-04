@@ -4,11 +4,10 @@ class VocentriesController < ApplicationController
 
 
   def index
+  sort_init 'eng_desc'
+  sort_update
     #@vocentries = Vocentry.all.sort
-    @vocentries = Vocentry.will_paginate :per_page => 10, :page => params[:page],
-                    :conditions => ["name LIKE ?", "%#{params[:search]}%"],
-                    :order => 'eng_word'
-    
+    @vocentries = Vocentry.search(params[:search], params[:page])
 
     respond_to do |format|
       format.html # index.html.erb

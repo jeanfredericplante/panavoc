@@ -1,6 +1,7 @@
  <tr>
     <td><%= word_entry.eng_word.downcase %></td>
     <td><%= word_entry.format_eng_def %></td>
+    <td><%= word_entry.created_at.to_formatted_s(:short) %></td>
     <td><%= link_to 'Show', word_entry %></td>
     <td><%= link_to 'Edit', edit_vocentry_path(word_entry) %></td>
     <td><%= link_to 'Destroy', word_entry, :confirm => 'Are you sure?', :method => :delete %></td>

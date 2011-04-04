@@ -11,11 +11,9 @@
 
 <table>
   <tr>
-    <th>Eng word</th>
-    <th>Eng desc</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <%= sort_header_tag('eng_word', :title => 'English word') %>
+    <%= sort_header_tag('eng_desc', :caption => 'English definition') %>
+    <%= sort_header_tag('created_at', :title => 'Creation time') %>
   </tr>
 <%= render(:partial => "word_entry",:collection => @vocentries) %>
 </table>

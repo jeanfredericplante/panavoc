@@ -1,6 +1,6 @@
 <h1>My vocabulary</h1>
 <%= link_to 'New Vocentry', new_vocentry_path %>
-<%= link_to 'Home', index_home_path %>
+<%= link_to 'Home', home_index_path %>
 
 <%form_tag vocentries_path, :method => 'get' do %>
   <p>
@@ -11,11 +11,8 @@
 
 <table>
   <tr>
-    <th>Eng word</th>
-    <th>Eng desc</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <%= sort_header_tag('eng_word', :title => 'English word') %>
+    <%= sort_header_tag('eng_desc', :caption => 'English definition') %>
   </tr>
 <%= render(:partial => "word_entry",:collection => @vocentries) %>
 </table>

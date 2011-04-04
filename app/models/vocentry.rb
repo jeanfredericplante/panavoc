@@ -15,8 +15,8 @@ class Vocentry < ActiveRecord::Base
     end
   end
 
-  def self.search (search, page)
-       paginate :per_page => 20, :page => page, :conditions => ["eng_word LIKE ?", "%#{search}%"], :order => 'eng_word'
+  def self.search (search, page, order)
+       paginate :per_page => 20, :page => page, :conditions => ["eng_word LIKE ?", "%#{search}%"], :order => order
   end
 
   def self.select_home_words(opts={})

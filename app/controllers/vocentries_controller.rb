@@ -4,8 +4,10 @@ class VocentriesController < ApplicationController
 
 
   def index
+  sort_init 'eng_desc'
+  sort_update
     #@vocentries = Vocentry.all.sort
-    @vocentries = Vocentry.search(params[:search], params[:page])
+    @vocentries = Vocentry.search(params[:search], params[:page], sort_clause)
 
     respond_to do |format|
       format.html # index.html.erb

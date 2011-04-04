@@ -5,4 +5,4 @@ Panavoc::Application.config.session_store :cookie_store, :key => '_panavoc_sessi
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
 # (create the session table with "rails generate session_migration")
-# Panavoc::Application.config.session_store :active_record_store
+Panavoc::Application.config.session_store :active_record_store

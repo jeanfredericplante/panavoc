@@ -18,6 +18,7 @@ class HomeController < ApplicationController
     @vocentries = Vocentry.find(params[:collection])
     @vocentries.each do |voc_item|
       voc_item.eng_desc = LanguageTools.definition_abbr(voc_item.eng_word.downcase)
+      voc_item.eng_desc = LanguageTools.definition_dictionary_com(voc_item.eng_word.downcase)
       voc_item.eng_desc = "no definition found" unless voc_item.eng_desc
       if voc_item.save
         # assuming there is nothing there, but validation should happen

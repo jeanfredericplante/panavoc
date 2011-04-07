@@ -15,6 +15,20 @@ class LanguageTools
     puts response
   end
 
+  def self.definition_dictionary_com(text)
+    text_uri = URI.escape(text, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
+    url = "http://api-pub.dictionary.com/v001?vid=5py0rh2k8u46dmr8t2n2iffguzm1ualzzk0r13caxh&q="+text_uri+"&type=define"
+    puts url
+    response = HTTParty.get(url)
+    if !response["dictionary"]["entry"].nil?
+     # return response["dictionary"]
+      return display_voc_formatted_from_dictionary_com(response["dictionary"])
+    else
+      return nil
+    end
+  end
+
+
   
   def self.definition_abbr(text)
     text_uri = URI.escape(text, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
@@ -53,6 +67,42 @@ class LanguageTools
   return def_list.html_safe 
   end
 
+
+   def self.display_voc_formatted_from_dictionary_com(response)
+    begin
+      def_list = "<ul>"
+      entry_array = normalize_to_array(response["entry"])
+      entry_array.each do |entry|
+        def_list = "<li>" + def_list
+        if !entry["partofspeech"].nil?
+          partofspeech_array = normalize_to_array(entry["partofspeech"])
+          partofspeech_array.each do |partofspeech|
+              if (partofspeech["pos"] && partofspeech["defset"]["def"])
+                  def_list = def_list +partofspeech["pos"] + ": "
+                  definition_array = normalize_to_array(partofspeech["defset"]["def"])
+                  definition_array.each do |definition|
+                    def_list += definition + ";"  
+                  end
+                  def_list = def_list + "</ul>"
+              end
+          end
+        end
+        def_list = def_list + "</li>"
+      end
+     def_list = def_list + "</ul>"
+    end
+  return def_list.html_safe 
+  end
+
+  def self.normalize_to_array(x)
+      if x.kind_of?(Array)
+          y = x
+      else
+          y = Array.new
+          y << x
+      end
+      return y
+  end
 
 end
 

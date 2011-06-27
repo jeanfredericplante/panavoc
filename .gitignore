@@ -1,4 +1,6 @@
 .bundle
+*.*~
 db/*.sqlite3
 log/*.log
+config/panavoc_config.yml
 tmp/**/*

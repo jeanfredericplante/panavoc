@@ -8,7 +8,7 @@ class LanguageTools
 
 
   def self.definition_google(text)
-    key = "AIzaSyBPAo4X2KBWrjoUYkIpb_SOOvP5HJ-0y_0"
+    key = APP_CONFIG["api_google"]
     url = 'http://www.google.com/dictionary/json?callback=dict_api.callbacks.id100&q='+text+'&sl=en&tl=en&restrict=pr%2Cde&client=te'
     puts url
     response = HTTParty.get(url)
@@ -16,8 +16,9 @@ class LanguageTools
   end
 
   def self.definition_dictionary_com(text)
+    key = APP_CONFIG["api_dictionary_com"]
     text_uri = URI.escape(text, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
-    url = "http://api-pub.dictionary.com/v001?vid=5py0rh2k8u46dmr8t2n2iffguzm1ualzzk0r13caxh&q="+text_uri+"&type=define"
+    url = "http://api-pub.dictionary.com/v001?vid="+key+"&q="+text_uri+"&type=define"
     puts url
     response = HTTParty.get(url)
     if !response["dictionary"]["entry"].nil?
@@ -31,8 +32,9 @@ class LanguageTools
 
   
   def self.definition_abbr(text)
+    key = APP_CONFIG["api_abbr_com"]
     text_uri = URI.escape(text, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
-    base_uri = "http://www.abbreviations.com/services/v1/defs.aspx?tokenid=tk1400&word=" 
+    base_uri = "http://www.abbreviations.com/services/v1/defs.aspx?tokenid=+"+key+"&word=" 
     url = base_uri+ text_uri
     puts url
     response = HTTParty.get(url)
@@ -44,8 +46,9 @@ class LanguageTools
   end
 
   def self.translate(text,from_locale="en",to_locale="fr")
+    key = APP_CONFIG["api_translate_com"]
     text_uri = URI.escape(text, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
-    base_uri = "https://www.googleapis.com/language/translate/v2?key=AIzaSyBPAo4X2KBWrjoUYkIpb_SOOvP5HJ-0y_0"
+    base_uri = "https://www.googleapis.com/language/translate/v2?key="+key
     url = base_uri+"&q="+text_uri+"&source="+from_locale+"&target="+to_locale
     puts url
     response = HTTParty.get(url)

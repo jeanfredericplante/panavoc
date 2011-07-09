@@ -1,0 +1,6 @@
+#Contains API keys for dictionary related services
+api_google: "your_key_here"
+api_dictionary_com: "your_key_here"
+api_abbr_com: "your_key_here"
+api_translate_com: "your_key_here"
+

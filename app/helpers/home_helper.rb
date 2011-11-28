@@ -13,4 +13,6 @@ module HomeHelper
     end
   return word_view
   end
+  
+
 end

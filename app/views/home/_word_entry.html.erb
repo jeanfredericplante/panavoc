@@ -1,9 +1,10 @@
   <tr id=<%= word_entry.id -%>>
-      <td><%= word_entry.eng_word.downcase -%></td>
-      <td><% if !word_entry.eng_desc.nil? %>
-        <ul> <%= word_entry.format_eng_def -%> </ul>
+     <td><%= word_entry.eng_word.downcase -%></td>
+      <td>
+		<% if !word_entry.eng_desc.nil? %>
+        	<%= word_entry.format_eng_def %>
         <% else %>
-            <img src="images/spinner.gif" height="10" alt="loading" />
+            	<img src="images/spinner.gif" height="10" alt="loading" />
         <% end %>
     </td>
     <td>

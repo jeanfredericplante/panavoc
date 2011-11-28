@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(:version => 20110111034606) do
     t.text     "sp_desc"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "frequency",  :default => 0
+    t.integer  "frequency",  :default => 1
     t.text     "notes"
   end
 

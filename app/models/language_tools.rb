@@ -23,7 +23,8 @@ class LanguageTools
     response = HTTParty.get(url)
     if !response["dictionary"]["entry"].nil?
      # return response["dictionary"]
-      return display_voc_formatted_from_dictionary_com(response["dictionary"])
+      #return display_voc_formatted_from_dictionary_com(response["dictionary"])
+      return response["dictionary"]
     else
       return nil
     end
@@ -39,7 +40,8 @@ class LanguageTools
     puts url
     response = HTTParty.get(url)
     if !response["results"].nil?
-      return display_voc_formatted_from_abbr(response["results"]["result"])
+      # return display_voc_formatted_from_abbr(response["results"]["result"])
+      return response["results"]["result"].to_yaml
     else
       return nil
     end
@@ -96,6 +98,22 @@ class LanguageTools
     end
   return def_list.html_safe 
   end
+  
+  
+  
+  def hash_to_html key,value
+     if value.nil?
+       puts "<li>#{key}</li>"
+     elsif value.is_a?(Hash)
+       puts "<li>#{key}"
+       puts "<ul>"
+       value.each(&method(:hash_to_html))
+       puts "</ul></li>"
+     else
+       fail "I don't know what to do with a #{value.class}"
+     end
+  end
+  
 
   def self.normalize_to_array(x)
       if x.kind_of?(Array)
@@ -106,6 +124,7 @@ class LanguageTools
       end
       return y
   end
+  
 
 end
 

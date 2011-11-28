@@ -9,7 +9,7 @@ class HomeController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @vocentries }
-      format.js
+     format.js
     end
  
   end
@@ -17,11 +17,11 @@ class HomeController < ApplicationController
   def get_definition
     @vocentries = Vocentry.find(params[:collection])
     @vocentries.each do |voc_item|
-      voc_item.eng_desc = LanguageTools.definition_abbr(voc_item.eng_word.downcase)
-      voc_item.eng_desc = LanguageTools.definition_dictionary_com(voc_item.eng_word.downcase)
-      voc_item.eng_desc = "no definition found" unless voc_item.eng_desc
+      # voc_item.eng_desc = LanguageTools.definition_abbr(voc_item.eng_word.downcase)
+      voc_item.eng_desc = LanguageTools.definition_dictionary_com(voc_item.eng_word.downcase) if voc_item.eng_desc.nil?
+      voc_item.eng_desc = "no definition found" if voc_item.eng_desc.nil?
       if voc_item.save
-        # assuming there is nothing there, but validation should happen
+        # assuming there is nothing there, but validation should happen?
       else
       end  
     end

@@ -2,7 +2,7 @@
 <%= link_to 'New Vocentry', new_vocentry_path %>
 <%= link_to 'Home', home_index_path %>
 
-<%form_tag vocentries_path, :method => 'get' do %>
+<%= form_tag vocentries_path, :method => 'get' do %>
   <p>
   <%= text_field_tag :search,  params['search'] %>
   <%= submit_tag "Search", :name => nil %>

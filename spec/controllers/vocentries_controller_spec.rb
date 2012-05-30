@@ -1,6 +1,6 @@
-require 'test_helper'
+require 'spec_helper'
 
-describe Vocentry do
+describe "Vocentry" do
 
   let(:word) { Fabricate(:vocentry)}
   describe "A vocabulary word" do

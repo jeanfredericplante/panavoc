@@ -1,9 +1,9 @@
-require 'test_helper'
+require 'spec_helper'
 
-class HomeControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
-    assert_response :success
+describe "Home page" do
+  describe Vocentry do
   end
-
+  
+  
 end
+

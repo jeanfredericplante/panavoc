@@ -36,4 +36,5 @@ group :development, :test do
   gem 'ffaker'
   gem 'capybara'
   gem 'nifty-generators'
+  gem 'spork'
 end
